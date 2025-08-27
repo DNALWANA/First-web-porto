@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daff Porto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <header>
+      <h1><b>DAFFA WEB PORTOFOLIO</b></h1>
+      <hr>
+  </header>
+
+  <main>
+    <!-- Intro Section -->
+    <section class="intro">
+      <div class="intro-text">
+        <h2><span id="typed-hi"></span></h2>
+        <h3><span id="typed-intro"></span></h3>
+        <p>
+          Hi there! I'm <b>Daffa Alwan Aziz</b>, an Electrical Engineering student at Telkom University<p>
+          with a passion for web development and Im currently learning C programming.
+        </p>
+        <p>Nice to meet you!</p>
+      </div>
+      <div class="intro-img">
+        <img src="foto-daffa.jpg" alt="Daffa">
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+      <a href="#about">
+      <div class="card">
+        <h3>About Me</h3>
+        <p>I am a student of <b>Electrical Engineering</b> from Telkom University................. See details</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <p>....See details</p>
+          
+        </ul>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#project">
+        <h3>Projects</h3>
+        <ul>
+          <li>
+              Portofolio Website
+              <p>....See details</p>
+          </li>
+        </ul>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="#contact">
+        <h3>Contact</h3>
+        <p>Email: daffcloud@gmail.com</p>
+        <p>....See details</p>
+      </div>
+      </a>
+    </section>
+  </main>
+
+  <script> // efek writing text
+    var typedHi = new Typed("#typed-hi", {
+  strings: ["Hi!"],
+  typeSpeed: 120,
+  showCursor: false, // <-- cursor dimatikan
+  onComplete: function() {
+    setTimeout(() => {
+      var typedIntro = new Typed("#typed-intro", {
+        strings: ["Let me introduce myself!"],
+        typeSpeed: 100,
+        showCursor: false // <-- cursor dimatikan
+      });
+    }, 500);
+  }
+});
+  </script>
+
+<section class="nyocot">
+
+  <div class="add">
+    <section id="about">
+    <h2>
+      About Me
+      <hr>
+    </h2>
+    <p>I am a student of <b>Electrical Engineering</b> from Telkom University, studying web development and also c language. I like to develop whenever I can, I hope to have a good impact to everyone.</p>
+    </section>
+  </div>
+
+  <div class="add">
+    <section id="skills">
+    <h2>
+      Skills
+      <hr>
+    </h2>
+    <p>HTML CSS JAVASCRIPT</p>
+    <p>C Programming</p>
+    <p>Git & Github</p>
+    </section>
+  </div>
+
+  <div class="add">
+    <section id="project">
+    <h2>
+      Project
+      <hr>
+    </h2>
+    <p>Portofolio WEB</p>
+    </section>
+  </div>
+
+  <div class="add">
+    <section id="contact">
+    <h2>
+      Contact
+      <hr>
+    </h2>
+     <p>Email: daffcloud@gmail.com</p>
+    <p>Phone: +62 878 7115 8949</p>
+    </section>
+  </div>
+  </section>
+
+  <script> //efek 3d photo
+    const img = document.querySelector(".intro-img img");
+
+    img.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = img.getBoundingClientRect();
+      const x = e.clientX - left; // posisi X kursor relatif
+      const y = e.clientY - top;  // posisi Y kursor relatif
+
+      const rotateX = ((y / height) - 0.5) * 20; // rotasi vertikal
+      const rotateY = ((x / width) - 0.5) * 20;  // rotasi horizontal
+
+      img.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.style.transform = "rotateX(0) rotateY(0) scale(1)";
+    });
+  </script>
+
+  <footer>
+    <p>© 2025 Daffa Alwan Aziz. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+</html>

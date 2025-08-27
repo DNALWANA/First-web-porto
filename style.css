@@ -1,0 +1,146 @@
+body {
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+}
+
+/* Intro section */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+.intro-text{
+   text-align: left;
+}
+
+/* Info section */
+.info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.info .card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 5px 6px 10px;
+  text-align: left;
+  
+}
+
+.info .card p{
+  text-align: justify;
+}
+
+.info .card:hover{
+  background-color: darkblue;
+  color: white;
+}
+
+.info .card p b{
+  color: darkblue;
+}
+
+.info .card:hover p b{
+  color: white;
+}
+
+
+header hr{
+  width: 50%;   /* panjang garis (bisa pakai px atau %) */
+  margin: 20px auto; /* biar tetap rata tengah */
+  border: 2px solid black;
+}
+
+.nyocot .add hr{
+  width: 20%;   /* panjang garis (bisa pakai px atau %) */
+  margin: 10px auto; /* biar tetap rata tengah */
+  border: 1px solid black;
+  transition: border-color 0.3s ease;
+}
+
+.nyocot .add:hover hr{
+  border-color: white ;
+}
+
+.nyocot .add{
+  margin-top: 12% !important;
+  border: 1px solid black;  /* border kotak */
+  margin-bottom: 12% !important;      /* jarak antar kotak */
+  padding: 70px;
+  text-align: center;
+  width: 30%;  
+  margin: 10px auto;
+  border-radius: 40px;
+}
+
+.nyocot :hover{
+  background-color: darkblue;
+  color: white;
+}
+
+.nyocot .add p{
+  text-align: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border: 1px solid black;
+  text-align: center;
+  padding: 15px;
+  background-color: navy;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 300px; /* biar pas berhenti scroll */
+}
+
+a {
+  color: inherit;        /* supaya ikut warna teks induknya */
+  text-decoration: none; /* hilangin garis bawah */
+}
+
+a:hover {
+  color: white;           /* biar pas di hover tetap hitam (atau ganti sesuai selera) */
+}
+
+.intro-img {
+      perspective: 1000px; /* biar ada efek kedalaman */
+}
+
+.intro-img img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px;
+      transition: transform 0.15s ease, box-shadow 0.3s ease;
+ }
+
+.intro-img img:hover {
+      box-shadow: 0 25px 40px ;
+}
+
+header h1{
+  font-weight: bold;
+}
+
+.nyocot .add p b{
+  color: darkblue;
+}
+
+.nyocot .add:hover p b{
+  color: white;
+}

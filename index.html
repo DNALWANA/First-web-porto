@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="interact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
@@ -75,23 +76,6 @@
     </section>
   </main>
 
-  <script> // efek writing text
-    var typedHi = new Typed("#typed-hi", {
-  strings: ["Hi!"],
-  typeSpeed: 120,
-  showCursor: false, // <-- cursor dimatikan
-  onComplete: function() {
-    setTimeout(() => {
-      var typedIntro = new Typed("#typed-intro", {
-        strings: ["Let me introduce myself!"],
-        typeSpeed: 100,
-        showCursor: false // <-- cursor dimatikan
-      });
-    }, 500);
-  }
-});
-  </script>
-
 <section class="nyocot">
 
   <div class="add">
@@ -137,25 +121,6 @@
     </section>
   </div>
   </section>
-
-  <script> //efek 3d photo
-    const img = document.querySelector(".intro-img img");
-
-    img.addEventListener("mousemove", (e) => {
-      const { left, top, width, height } = img.getBoundingClientRect();
-      const x = e.clientX - left; // posisi X kursor relatif
-      const y = e.clientY - top;  // posisi Y kursor relatif
-
-      const rotateX = ((y / height) - 0.5) * 20; // rotasi vertikal
-      const rotateY = ((x / width) - 0.5) * 20;  // rotasi horizontal
-
-      img.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-    });
-
-    img.addEventListener("mouseleave", () => {
-      img.style.transform = "rotateX(0) rotateY(0) scale(1)";
-    });
-  </script>
 
   <footer>
     <p>© 2025 Daffa Alwan Aziz. All Rights Reserved.</p>

@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 // efek writing text
 var typedHi = new Typed("#typed-hi", {
   strings: ["Hi!"],
@@ -33,3 +35,4 @@ if (img) {
     img.style.transform = "rotateX(0) rotateY(0) scale(1)";
   });
 }
+});

@@ -3,7 +3,7 @@ body {
   text-align: center;
 }
 
-/* Intro section */
+
 .intro {
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
    text-align: left;
 }
 
-/* Info section */
+
 .info {
   display: flex;
   justify-content: center;
@@ -52,13 +52,13 @@ body {
 
 
 header hr{
-  width: 50%;   /* panjang garis (bisa pakai px atau %) */
-  margin: 20px auto; /* biar tetap rata tengah */
+  width: 50%;   
+  margin: 20px auto; 
   border: 2px solid black;
 }
 
 .nyocot .add hr{
-  width: 20%;   /* panjang garis (bisa pakai px atau %) */
+  width: 20%;  
   margin: 10px auto; /* biar tetap rata tengah */
   border: 1px solid black;
   transition: border-color 0.3s ease;
@@ -115,7 +115,7 @@ a {
 }
 
 a:hover {
-  color: white;           /* biar pas di hover tetap hitam (atau ganti sesuai selera) */
+  color: white;      
 }
 
 .intro-img {

@@ -123,7 +123,7 @@ header h1{
 
 .about-section .about-container{
   display: flex;
-  align-items: start;     /* biar sejajar tengah secara vertikal */
+  align-items: start;     /* biar sejajar secara vertikal */
   justify-content: space-between;
   gap: 40px;
   margin: 40px 100px;
@@ -133,23 +133,27 @@ header h1{
   text-align: left;
 }
 
+.about-text b{
+  color: darkblue;
+}
+
 
 .abutimg {
   display: flex;
-  width: 100%;
+  width: 400%;
+  transition: margin-left 0.6s ease-in-out;
 }
 
 .abutimg img{
-  width: 100%;
+  width: 25%;
 }
 
 .wrapper {
   width: 400px;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   margin-top: -200px;
-
 }
 
 .nav-about a{
@@ -181,3 +185,56 @@ header h1{
 #slide4:target ~ .abutimg {
   margin-left: -300%;
 }
+
+.skills-section h2{
+  margin-right: 1000px;
+  margin-top: 200px;
+}
+
+.skills-section hr{
+  width: 20%;  
+  margin-left: 105px;
+  border: 1px solid black;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.skills-container{
+  display: flex;
+  align-items: start;     
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px 100px;
+}
+
+.skills-text{
+  max-width: 500px;
+}
+
+.skills-text p{
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.skills-container img{
+  margin-top: -35%;
+  margin-left: -40%;
+  width: 500px;
+}
+
+.skills-text .blue{
+  color: darkblue;
+}
+
+.skills-text .orange{
+  color: #fb8500;
+}
+
+.skills-text .blue2{
+  color: #0096c7;
+}
+
+.skills-text .yellow{
+  color: #ffba08;
+}
+

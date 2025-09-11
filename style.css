@@ -277,14 +277,13 @@ header h1{
 }
 
 .projectimg img{
-  width: 20%;
-  border: 3px solid black;       /* border tiap gambar */
+  width: 20%;       /* border tiap gambar */
   border-radius: 10px;           /* sudut agak melengkung */
   box-sizing: border-box;
 }
 
 .wrapproject{
-  width: 591px;
+  width: 585px;
   overflow: hidden;
   margin-right: -300%;
   margin-top: -35%;

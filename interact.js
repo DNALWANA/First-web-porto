@@ -36,3 +36,39 @@ if (img) {
   });
 }
 });
+
+const projectContainer = document.querySelector(".projectimg");
+const projectImages = document.querySelectorAll(".projectimg img");
+const descElement = document.getElementById("project-desc");
+
+
+const projectDescriptions = [
+  "Masakyo Homepage - The homepage of the website project that will be launched in the future, Masakyo is a website to help users find food menus and cook them.",
+  "Masakyo Asset - Masakyo website development process.",
+  "C Calendar - C language based interactive calendar.",
+  "3D Project - IoT based 3D object visualization model of recycling bin.",
+  "Arduino Project - Sensor monitoring with Arduino Uno for automatic trash can lid.."
+];
+
+let currentIndex = 0;
+
+// Fungsi update slide
+function updateSlide() {
+  const width = projectImages[0].clientWidth;
+  projectContainer.style.transform = `translateX(-${currentIndex * width}px)`;
+  descElement.textContent = projectDescriptions[currentIndex];
+}
+
+// Tombol prev / next
+document.querySelector(".prev").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + projectImages.length) % projectImages.length;
+  updateSlide();
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % projectImages.length;
+  updateSlide();
+});
+
+// Inisialisasi deskripsi pertama
+updateSlide();

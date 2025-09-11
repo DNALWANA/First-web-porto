@@ -131,6 +131,7 @@ header h1{
 
 .about-section .about-container .about-text p{
   text-align: left;
+  justify-content: center;
 }
 
 .about-text b{
@@ -238,3 +239,74 @@ header h1{
   color: #ffba08;
 }
 
+.project-section{
+  margin-right: 1000px;
+  margin-top: 200px;
+}
+
+.project-section hr{
+  width: 60%;  
+  margin-left: 105px;
+  border: 1px solid black;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.project-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px 100px;
+}
+
+.project-text{
+  width: 480px;
+  flex-shrink: 0px;
+}
+
+.project-text p{
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.projectimg{
+  display: flex;
+  width: 500%;
+  transition: margin-left 0.6s ease-in-out;
+}
+
+.projectimg img{
+  width: 20%;
+  border: 3px solid black;       /* border tiap gambar */
+  border-radius: 10px;           /* sudut agak melengkung */
+  box-sizing: border-box;
+}
+
+.wrapproject{
+  width: 591px;
+  overflow: hidden;
+  margin-right: -300%;
+  margin-top: -35%;
+}
+
+.prev, .next {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  font-size: 0px;
+  margin: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 30px;
+  background: none;
+  border: none;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+ color: #0096c7;
+}
